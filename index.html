@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <!-- Main template css file -->
@@ -20,26 +20,26 @@
     <!-- Sweet Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<body>
+<body class="m-0 p-0">
 <!-- Start Header -->
-    <div class="header bg-[#15161D] pt-3 pb-3">
-        <div class="container flex justify-between items-center">
-            <div class="logo">
+    <div class="header bg-[#15161D] pt-3 pb-3 border-b-[2px] border-[var(--main-color)]">
+        <div class="container px-4 mx-auto flex justify-between items-center max-lg:block">
+            <div class="logo max-lg:flex max-lg:justify-center">
                 <img src="Assets/logo.png" alt="logo">
             </div>
-            <div class="search-bar">
-                <form class="flex justify-between items-center">
-                    <select class="bg-white rounded-l-full p-2 text-[#333] h-[40px] font-normal">
+            <div class="search-bar my-0 mx-[30px]">
+                <form class="flex justify-between items-center max-lg:justify-center max-lg:py-[10px] max-lg:pb-[15px]">
+                    <select class="bg-white rounded-l-full p-2 text-[#333] h-[40px] font-normal !text-sm cursor-pointer">
                         <option>All Categories</option>
                         <option>Category-1</option>
                         <option>Category-2</option>
                     </select>
-                    <input class="p-2 bg-white h-[40px]" type="text" placeholder="Search here">
-                    <button class="p-2 bg-(--main-color) rounded-r-full pl-3 pr-3 text-white font-bold h-[40px] w-[100px] cursor-pointer">Search</button>
+                    <input class="p-2 bg-white h-[40px] w-[calc(100%-150px)] md:w-auto !text-sm border border-[var(--sec-color)]" type="text" placeholder="Search here">
+                    <button class="p-2 bg-(--main-color) rounded-r-full pl-3 pr-3 text-white font-bold h-[40px] w-[100px] cursor-pointer !text-sm">Search</button>
                 </form>
             </div>
-            <div class="icons flex items-center gap-5">
-                <a href="##" class="sp flex flex-col gap-1 text-center relative">
+            <div class="icons flex items-center gap-5 max-lg:justify-end">
+                <a href="##" class="sp after:content-['2'] after:absolute after:top-[-10px] after:right-[12px] after:w-[18px] after:h-[18px] after:bg-[var(--main-color)] after:text-white after:text-[10px] after:rounded-full after:text-center after:leading-[20px] flex flex-col gap-1 text-center relative">
                     <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
                     <span class="text-xs text-white font-medium">Your Wishlist</span>
                 </a>
@@ -48,7 +48,7 @@
                     <span class="text-xs text-white">Your Cart</span>
                     <div class="caret-list absolute"></div>
                 </a>
-                <a href="##" class="menu text-center relative hidden">
+                <a href="##" class="menu text-center relative hidden max-lg:flex max-lg:flex-col max-lg:gap-[4px]">
                     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
                     <span class="text-xs text-white">Menu</span>
                 </a>
@@ -57,48 +57,48 @@
     </div>
 <!-- End Header -->
 <!-- Start Nav -->
-    <nav class="nav">
-        <div class="container pt-6 pb-6">
-            <ul class="side-nav flex gap-7">
-                <li class="active">Home</li>
-                <li>Hot Deals</li>
-                <li>Categories</li>
-                <li>Laptops</li>
-                <li>Smartphones</li>
-                <li>Cameras</li>
-                <li>Accessories</li>
+    <nav class="nav border-b-2 border-[var(--sec-color)] max-lg:h-0">
+        <div class="container px-4 mx-auto pt-6 pb-6">
+            <ul class="side-nav flex gap-7 max-lg:flex-col max-lg:py-[40px] max-lg:px-[12px] max-lg:bg-[#15161D] max-lg:h-fit max-lg:w-[250px] max-lg:z-20 max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:-translate-x-[250px] max-lg:transition-transform max-lg:duration-200 max-lg:ease-in-out">
+                <li class="active relative text-[#2B2D42] text-sm font-medium transition duration-300 ease-in-out cursor-pointer max-lg:text-white max-lg:p-[15px] hover:text-[var(--main-color)] before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-[var(--main-color)] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full border-b-2 border-[var(--main-color)] !text-[var(--main-color)] pb-[2px]">Home</li>
+                <li class="relative text-[#2B2D42] text-sm font-medium transition duration-300 ease-in-out cursor-pointer max-lg:text-white max-lg:p-[15px] hover:text-[var(--main-color)] before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-[var(--main-color)] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">Hot Deals</li>
+                <li class="relative text-[#2B2D42] text-sm font-medium transition duration-300 ease-in-out cursor-pointer max-lg:text-white max-lg:p-[15px] hover:text-[var(--main-color)] before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-[var(--main-color)] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">Categories</li>
+                <li class="relative text-[#2B2D42] text-sm font-medium transition duration-300 ease-in-out cursor-pointer max-lg:text-white max-lg:p-[15px] hover:text-[var(--main-color)] before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-[var(--main-color)] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">Laptops</li>
+                <li class="relative text-[#2B2D42] text-sm font-medium transition duration-300 ease-in-out cursor-pointer max-lg:text-white max-lg:p-[15px] hover:text-[var(--main-color)] before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-[var(--main-color)] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">Smartphones</li>
+                <li class="relative text-[#2B2D42] text-sm font-medium transition duration-300 ease-in-out cursor-pointer max-lg:text-white max-lg:p-[15px] hover:text-[var(--main-color)] before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-[var(--main-color)] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">Cameras</li>
+                <li class="relative text-[#2B2D42] text-sm font-medium transition duration-300 ease-in-out cursor-pointer max-lg:text-white max-lg:p-[15px] hover:text-[var(--main-color)] before:content-[''] before:absolute before:bottom-[-2px] before:left-0 before:h-[2px] before:w-0 before:bg-[var(--main-color)] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">Accessories</li>
             </ul>
         </div>
     </nav>
 <!-- End Nav -->
 <!-- Start Collection -->
     <div class="collection pt-8 pb-17">
-        <div class="container grid [grid-template-columns:repeat(auto-fit,minmax(290px,1fr))] gap-7">
-            <div class="shop">
-                <div class="image max-w-full">
-                    <img src="Assets/shop01.png" alt="">
+        <div class="container px-4 mx-auto grid [grid-template-columns:repeat(auto-fit,_minmax(250px,_1fr))] gap-7 max-sm:grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]">
+            <div class="shop relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-[-40%] before:w-full before:h-full before:bg-[#d10023e8] before:skew-x-[-50deg] before:z-2">
+                <div class="image max-w-full bg-[#ddd] overflow-hidden">
+                    <img src="Assets/shop01.png" class="transition-transform duration-300 ease-in-out hover:scale-110" alt="">
                 </div>
-                <div class="text">
-                    <h3>Laptop Collection</h3>
-                    <a href="##">SHOP NOW <i class="fa-solid fa-circle-right" style="color: #ffffff;"></i></a>
-                </div>
-            </div>
-            <div class="shop">
-                <div class="image">
-                    <img src="Assets/shop03.png" alt="">
-                </div>
-                <div class="text">
-                    <h3>Accessories Collection</h3>
-                    <a href="##">SHOP NOW <i class="fa-solid fa-circle-right" style="color: #ffffff;"></i></a>
+                <div class="text absolute top-0 !z-10 text-white p-[30px] w-1/2 max-sm:p-[10px]">
+                    <h3 class="text-[26px] mb-[10px] font-bold !text-white">Laptop Collection</h3>
+                    <a class="text-sm font-medium" href="##">SHOP NOW <i class="fa-solid fa-circle-right" style="color: #ffffff;"></i></a>
                 </div>
             </div>
-            <div class="shop">
-                <div class="image">
-                    <img src="Assets/shop02.png" alt="">
+            <div class="shop relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-[-40%] before:w-full before:h-full before:bg-[#d10023e8] before:skew-x-[-50deg] before:z-2">
+                <div class="image max-w-full bg-[#ddd] overflow-hidden">
+                    <img src="Assets/shop03.png" class="transition-transform duration-300 ease-in-out hover:scale-110" alt="">
                 </div>
-                <div class="text">
-                    <h3>Cameras Collection</h3>
-                    <a href="##">SHOP NOW <i class="fa-solid fa-circle-right" style="color: #ffffff;"></i></a>
+                <div class="text absolute top-0 !z-10 text-white p-[30px] w-1/2 max-sm:p-[10px]">
+                    <h3 class="text-[26px] mb-[10px] font-bold !text-white">Accessories Collection</h3>
+                    <a class="text-sm font-medium" href="##">SHOP NOW <i class="fa-solid fa-circle-right" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="shop relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-[-40%] before:w-full before:h-full before:bg-[#d10023e8] before:skew-x-[-50deg] before:z-2">
+                <div class="image max-w-full bg-[#ddd] overflow-hidden">
+                    <img src="Assets/shop02.png" class="transition-transform duration-300 ease-in-out hover:scale-110" alt="">
+                </div>
+                <div class="text absolute top-0 !z-10 text-white p-[30px] w-1/2 max-sm:p-[10px]">
+                    <h3 class="text-[26px] mb-[10px] font-bold !text-white">Cameras Collection</h3>
+                    <a class="text-sm font-medium" href="##">SHOP NOW <i class="fa-solid fa-circle-right" style="color: #ffffff;"></i></a>
                 </div>
             </div>
         </div>
@@ -106,99 +106,99 @@
 <!-- End Collection -->
 <!-- Start Products -->
     <div class="products pt-8 pb-19">
-        <div class="container">
-            <div class="top-heading flex justify-between items-center pb-10">
+        <div class="container px-4 mx-auto">
+            <div class="top-heading flex justify-between items-center pb-10 max-md:flex-col max-md:items-start max-md:gap-[10px]">
                 <h3 class="text-2xl font-bold uppercase">New Products</h3>
                 <ul class="flex gap-5 flex-wrap">
-                    <li class="special">Laptops</li>
-                    <li>Smartphones</li>
-                    <li>Cameras</li>
-                    <li>Accessories</li>
+                    <li class="special relative text-sm font-bold text-[#8D99AE] cursor-pointer before:content-[''] before:absolute before:w-0 before:h-[2px] before:-bottom-[2px] before:left-0 before:bg-[var(--main-color)] before:transition-all before:duration-200 hover:before:w-full border-b-[2px] border-[var(--main-color)] text-[var(--main-color)] pb-[2px]">Laptops</li>
+                    <li class="relative text-sm font-bold text-[#8D99AE] cursor-pointer before:content-[''] before:absolute before:w-0 before:h-[2px] before:-bottom-[2px] before:left-0 before:bg-[var(--main-color)] before:transition-all before:duration-200 hover:before:w-full">Smartphones</li>
+                    <li class="relative text-sm font-bold text-[#8D99AE] cursor-pointer before:content-[''] before:absolute before:w-0 before:h-[2px] before:-bottom-[2px] before:left-0 before:bg-[var(--main-color)] before:transition-all before:duration-200 hover:before:w-full">Cameras</li>
+                    <li class="relative text-sm font-bold text-[#8D99AE] cursor-pointer before:content-[''] before:absolute before:w-0 before:h-[2px] before:-bottom-[2px] before:left-0 before:bg-[var(--main-color)] before:transition-all before:duration-200 hover:before:w-full">Accessories</li>
                 </ul>
             </div>
             <div class="boxes grid [grid-template-columns:repeat(auto-fit,minmax(200px,1fr))] gap-8">
-                <div class="box sp">
+                <div class="box group/box sp relative flex flex-col items-center justify-between text-center bg-white shadow-[0_0_0_1px_var(--sec-color)] transition-all duration-200 ease-in-out max-lg:hover:mb-[70px] hover:shadow-[0_0_0_2px_var(--main-color)] before:content-['NEW'] before:absolute before:right-[15px] before:top-[15px] before:border-2 before:border-[var(--main-color)] before:bg-[var(--main-color)] before:text-white before:px-[10px] before:py-[3px] before:text-[12px] before:leading-[1.2] before:tracking-[1.1px]">
                     <div class="image">
                         <img src="Assets/product01.png" alt="">
                     </div>
-                    <div class="text">
-                        <span>Laptops</span>
-                        <h3>Lenovo IdeaPad</h3>
-                        <h4>$590.00 <del>$659.00</del></h4>
-                        <div class="rate">
-                            <i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i>
+                    <div class="text relative flex flex-col justify-center items-center w-full py-[10px] px-[5px] bg-white z-[2] before:content-[''] before:absolute before:w-[80%] before:h-[2px] before:bg-[var(--sec-color)] before:bottom-[40%]">
+                        <span class="text-[#8D99AE] font-medium uppercase text-[13px] mb-[8px]">Laptops</span>
+                        <h3 class="tracking-[0.3px] text-[#2B2D42] font-bold mb-[8px] uppercase cursor-pointer transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]">Lenovo IdeaPad</h3>
+                        <h4 class="text-[var(--main-color)] font-bold text-[18px] mb-[8px]">$590.00 <del class="text-[#8D99AE] text-[12px]">$659.00</del></h4>
+                        <div class="rate my-[10px] mb-[15px] z-[1] flex justify-center gap-1">
+                            <i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i>
                         </div>
-                        <div class="btns">
-                            <i class="fa-regular fa-heart fa-xs" style="color: #2b2b42;"></i>
-                            <i class="fa-solid fa-right-left fa-xs" style="color: #2b2d42;"></i>
-                            <i class="fa-solid fa-eye fa-xs" style="color: #2b2d42;"></i>
+                        <div class="btns flex m-[20px] gap-[30px] justify-center">
+                            <i class="fa-regular fa-heart fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-right-left fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-eye fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
                         </div>
                     </div>
-                    <div class="caret">
-                        <button class="alert-btn"><i class="fa-solid fa-cart-shopping fa-sm" style="color: #ef233c;"></i>ADD TO CARET</button>
+                    <div class="caret absolute bottom-0 w-full h-[70px] bg-black flex justify-center items-center text-center py-[20px] transition-all duration-200 ease-in-out group-hover/box:translate-y-[70px]">
+                        <button class="alert-btn group/btn bg-[var(--main-color)] border-2 border-[var(--main-color)] text-white py-[10px] px-[24px] rounded-full font-bold text-[15px] transition-all duration-200 ease-in-out hover:bg-white hover:text-[var(--main-color)] cursor-pointer"><i class="fa-solid fa-cart-shopping fa-sm text-[#ef233c] !hidden pr-4 group-hover/btn:!inline transition-transform duration-200 ease-in-out group-hover/btn:translate-y-[70px]"></i>ADD TO CARET</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box group/box relative flex flex-col items-center justify-between text-center bg-white shadow-[0_0_0_1px_var(--sec-color)] transition-all duration-200 ease-in-out max-lg:hover:mb-[70px] hover:shadow-[0_0_0_2px_var(--main-color)]">
                     <div class="image">
                         <img src="Assets/product05.png" alt="">
                     </div>
-                    <div class="text">
-                        <span>Headphones</span>
-                        <h3>Sony MDR</h3>
-                        <h4>$79.00</h4>
-                            <div class="rate">
-                            <i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i>
+                    <div class="text relative flex flex-col justify-center items-center w-full py-[10px] px-[5px] bg-white z-[2] before:content-[''] before:absolute before:w-[80%] before:h-[2px] before:bg-[var(--sec-color)] before:bottom-[40%]">
+                        <span class="text-[#8D99AE] font-medium uppercase text-[13px] mb-[8px]">Headphones</span>
+                        <h3 class="tracking-[0.3px] text-[#2B2D42] font-bold mb-[8px] uppercase cursor-pointer transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]">Sony MDR</h3>
+                        <h4 class="text-[var(--main-color)] font-bold text-[18px] mb-[8px]">$79.00</h4>
+                        <div class="rate my-[10px] mb-[15px] z-[1] flex justify-center gap-1">
+                            <i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i>
                         </div>
-                        <div class="btns">
-                            <i class="fa-regular fa-heart fa-xs" style="color: #2b2b42;"></i>
-                            <i class="fa-solid fa-right-left fa-xs" style="color: #2b2d42;"></i>
-                            <i class="fa-solid fa-eye fa-xs" style="color: #2b2d42;"></i>
+                        <div class="btns flex m-[20px] gap-[30px] justify-center">
+                            <i class="fa-regular fa-heart fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-right-left fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-eye fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
                         </div>
                     </div>
-                    <div class="caret">
-                        <button class="alert-btn"><i class="fa-solid fa-cart-shopping fa-sm" style="color: #ef233c;"></i>ADD TO CARET</button>
+                    <div class="caret absolute bottom-0 w-full h-[70px] bg-black flex justify-center items-center text-center py-[20px] transition-all duration-200 ease-in-out group-hover/box:translate-y-[70px]">
+                        <button class="alert-btn group/btn bg-[var(--main-color)] border-2 border-[var(--main-color)] text-white py-[10px] px-[24px] rounded-full font-bold text-[15px] transition-all duration-200 ease-in-out hover:bg-white hover:text-[var(--main-color)] cursor-pointer"><i class="fa-solid fa-cart-shopping fa-sm text-[#ef233c] !hidden pr-4 group-hover/btn:!inline transition-transform duration-200 ease-in-out group-hover/btn:translate-y-[70px]"></i>ADD TO CARET</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box group/box relative flex flex-col items-center justify-between text-center bg-white shadow-[0_0_0_1px_var(--sec-color)] transition-all duration-200 ease-in-out max-lg:hover:mb-[70px] hover:shadow-[0_0_0_2px_var(--main-color)]">
                     <div class="image">
                         <img src="Assets/product04.png" alt="">
                     </div>
-                    <div class="text">
-                        <span>Tablets</span>
-                        <h3>Sony Xperia Z4</h3>
-                        <h4>$189.00</h4>
-                        <div class="rate">
-                            <i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #e4e7ed;"></i>
+                    <div class="text relative flex flex-col justify-center items-center w-full py-[10px] px-[5px] bg-white z-[2] before:content-[''] before:absolute before:w-[80%] before:h-[2px] before:bg-[var(--sec-color)] before:bottom-[40%]">
+                        <span class="text-[#8D99AE] font-medium uppercase text-[13px] mb-[8px]">Tablets</span>
+                        <h3 class="tracking-[0.3px] text-[#2B2D42] font-bold mb-[8px] uppercase cursor-pointer transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]">Sony Xperia Z4</h3>
+                        <h4 class="text-[var(--main-color)] font-bold text-[18px] mb-[8px]">$189.00</h4>
+                        <div class="rate my-[10px] mb-[15px] z-[1] flex justify-center gap-1">
+                            <i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#e4e7ed]"></i>
                         </div>
-                        <div class="btns">
-                            <i class="fa-regular fa-heart fa-xs" style="color: #2b2b42;"></i>
-                            <i class="fa-solid fa-right-left fa-xs" style="color: #2b2d42;"></i>
-                            <i class="fa-solid fa-eye fa-xs" style="color: #2b2d42;"></i>
+                        <div class="btns flex m-[20px] gap-[30px] justify-center">
+                            <i class="fa-regular fa-heart fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-right-left fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-eye fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
                         </div>
                     </div>
-                    <div class="caret">
-                        <button class="alert-btn"><i class="fa-solid fa-cart-shopping fa-sm" style="color: #ef233c;"></i>ADD TO CARET</button>
+                    <div class="caret absolute bottom-0 w-full h-[70px] bg-black flex justify-center items-center text-center py-[20px] transition-all duration-200 ease-in-out group-hover/box:translate-y-[70px]">
+                        <button class="alert-btn group/btn bg-[var(--main-color)] border-2 border-[var(--main-color)] text-white py-[10px] px-[24px] rounded-full font-bold text-[15px] transition-all duration-200 ease-in-out hover:bg-white hover:text-[var(--main-color)] cursor-pointer"><i class="fa-solid fa-cart-shopping fa-sm text-[#ef233c] !hidden pr-4 group-hover/btn:!inline transition-transform duration-200 ease-in-out group-hover/btn:translate-y-[70px]"></i>ADD TO CARET</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box group/box relative flex flex-col items-center justify-between text-center bg-white shadow-[0_0_0_1px_var(--sec-color)] transition-all duration-200 ease-in-out max-lg:hover:mb-[70px] hover:shadow-[0_0_0_2px_var(--main-color)]">
                     <div class="image">
                         <img src="Assets/product08.png" alt="">
                     </div>
-                    <div class="text">
-                        <span>Laptops</span>
-                        <h3>Asus VivoBook X200</h3>
-                        <h4>$299.00</h4>
-                        <div class="rate">
-                            <i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i>
+                    <div class="text relative flex flex-col justify-center items-center w-full py-[10px] px-[5px] bg-white z-[2] before:content-[''] before:absolute before:w-[80%] before:h-[2px] before:bg-[var(--sec-color)] before:bottom-[40%]">
+                        <span class="text-[#8D99AE] font-medium uppercase text-[13px] mb-[8px]">Laptops</span>
+                        <h3 class="tracking-[0.3px] text-[#2B2D42] font-bold mb-[8px] uppercase cursor-pointer transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]">Asus VivoBook X200</h3>
+                        <h4 class="text-[var(--main-color)] font-bold text-[18px] mb-[8px]">$299.00</h4>
+                        <div class="rate my-[10px] mb-[15px] z-[1] flex justify-center gap-1">
+                            <i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i>
                         </div>
-                        <div class="btns">
-                            <i class="fa-regular fa-heart fa-xs" style="color: #2b2b42;"></i>
-                            <i class="fa-solid fa-right-left fa-xs" style="color: #2b2d42;"></i>
-                            <i class="fa-solid fa-eye fa-xs" style="color: #2b2d42;"></i>
+                        <div class="btns flex m-[20px] gap-[30px] justify-center">
+                            <i class="fa-regular fa-heart fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-right-left fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-eye fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
                         </div>
                     </div>
-                    <div class="caret">
-                        <button class="alert-btn"><i class="fa-solid fa-cart-shopping fa-sm" style="color: #ef233c;"></i>ADD TO CARET</button>
+                    <div class="caret absolute bottom-0 w-full h-[70px] bg-black flex justify-center items-center text-center py-[20px] transition-all duration-200 ease-in-out group-hover/box:translate-y-[70px]">
+                        <button class="alert-btn group/btn bg-[var(--main-color)] border-2 border-[var(--main-color)] text-white py-[10px] px-[24px] rounded-full font-bold text-[15px] transition-all duration-200 ease-in-out hover:bg-white hover:text-[var(--main-color)] cursor-pointer"><i class="fa-solid fa-cart-shopping fa-sm text-[#ef233c] !hidden pr-4 group-hover/btn:!inline transition-transform duration-200 ease-in-out group-hover/btn:translate-y-[70px]"></i>ADD TO CARET</button>
                     </div>
                 </div>
             </div>
@@ -206,129 +206,129 @@
     </div>
 <!-- End Products -->
 <!-- Start Hot Deal -->
-    <div class="hot-deal h-[400px] bg-center bg-no-repeat">
-        <div class="container flex justify-center items-center flex-col p-15">
+    <div class="hot-deal h-[400px] bg-center bg-no-repeat flex items-center">
+        <div class="container px-4 mx-auto flex justify-center items-center flex-col p-15 h-auto p-[30px] max-sm:h-full max-sm:justify-around max-sm:p-[30px]">
             <ul class="flex justify-center gap-4 flex-wrap">
-                <li>
-                    <h3>02</h3>
-                    <span>Days</span>
+                <li class="bg-[var(--main-color)] w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center uppercase flex-wrap max-sm:w-[90px] max-sm:h-[90px]">
+                    <h3 class="text-white text-[24px] font-extrabold">02</h3>
+                    <span class="text-white text-[10px]">Days</span>
                 </li>
-                <li>
-                    <h3>10</h3>
-                    <span>Hours</span>
+                <li class="bg-[var(--main-color)] w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center uppercase flex-wrap max-sm:w-[90px] max-sm:h-[90px]">
+                    <h3 class="text-white text-[24px] font-extrabold">10</h3>
+                    <span class="text-white text-[10px]">Hours</span>
                 </li>
-                <li>
-                    <h3>34</h3>
-                    <span>Mins</span>
+                <li class="bg-[var(--main-color)] w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center uppercase flex-wrap max-sm:w-[90px] max-sm:h-[90px]">
+                    <h3 class="text-white text-[24px] font-extrabold">34</h3>
+                    <span class="text-white text-[10px]">Mins</span>
                 </li>
-                <li>
-                    <h3>60</h3>
-                    <span>Secs</span>
+                <li class="bg-[var(--main-color)] w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center uppercase flex-wrap max-sm:w-[90px] max-sm:h-[90px]">
+                    <h3 class="text-white text-[24px] font-extrabold">60</h3>
+                    <span class="text-white text-[10px]">Secs</span>
                 </li>
             </ul>
-            <div class="text text-center uppercase mt-10 text-[#2B2D42]">
-                <h2 class="text-3xl font-bold mb-3">hot deal this week</h2>
-                <p class="text-2xl mb-6 font-normal">new collection up to 50% off</p>
-                <button class="text-white cursor-pointer font-bold rounded-[50px] bg-[var(--main-color)]">shop now</button>
+            <div class="text text-center uppercase mt-10 text-[#2B2D42] max-sm:mt-[10px]">
+                <h2 class="text-3xl font-bold mb-3 max-sm:text-[22px]">hot deal this week</h2>
+                <p class="text-2xl mb-6 font-normal max-sm:text-[18px] max-sm:mb-[10px]">new collection up to 50% off</p>
+                <button class="text-white cursor-pointer font-bold rounded-[50px] bg-[var(--main-color)] py-[14px] px-[28px] text-[14px] uppercase hover:bg-[#d10023e8]">shop now</button>
             </div>
         </div>
     </div>
 <!-- End Hot Deal -->
 <!-- Start Top Selling -->
     <div class="products pt-17 pb-17">
-        <div class="container">
-            <div class="top-heading flex justify-between items-center pb-10">
+        <div class="container px-4 mx-auto">
+            <div class="top-heading flex justify-between items-center pb-10 max-md:flex-col max-md:items-start max-md:gap-[10px]">
                 <h3 class="text-2xl font-bold uppercase">Top Selling</h3>
                 <ul class="flex gap-5 flex-wrap">
-                    <li class="special">Laptops</li>
-                    <li>Smartphones</li>
-                    <li>Cameras</li>
-                    <li>Accessories</li>
+                    <li class="special relative text-sm font-bold text-[#8D99AE] cursor-pointer before:content-[''] before:absolute before:w-0 before:h-[2px] before:-bottom-[2px] before:left-0 before:bg-[var(--main-color)] before:transition-all before:duration-200 hover:before:w-full border-b-[2px] border-[var(--main-color)] text-[var(--main-color)] pb-[2px]">Laptops</li>
+                    <li class="relative text-sm font-bold text-[#8D99AE] cursor-pointer before:content-[''] before:absolute before:w-0 before:h-[2px] before:-bottom-[2px] before:left-0 before:bg-[var(--main-color)] before:transition-all before:duration-200 hover:before:w-full">Smartphones</li>
+                    <li class="relative text-sm font-bold text-[#8D99AE] cursor-pointer before:content-[''] before:absolute before:w-0 before:h-[2px] before:-bottom-[2px] before:left-0 before:bg-[var(--main-color)] before:transition-all before:duration-200 hover:before:w-full">Cameras</li>
+                    <li class="relative text-sm font-bold text-[#8D99AE] cursor-pointer before:content-[''] before:absolute before:w-0 before:h-[2px] before:-bottom-[2px] before:left-0 before:bg-[var(--main-color)] before:transition-all before:duration-200 hover:before:w-full">Accessories</li>
                 </ul>
             </div>
             <div class="boxes grid [grid-template-columns:repeat(auto-fit,minmax(200px,1fr))] gap-8">
-                <div class="box">
+                <div class="box group/box relative flex flex-col items-center justify-between text-center bg-white shadow-[0_0_0_1px_var(--sec-color)] transition-all duration-200 ease-in-out max-lg:hover:mb-[70px] hover:shadow-[0_0_0_2px_var(--main-color)]">
                     <div class="image">
                         <img src="Assets/product06.png" alt="">
                     </div>
-                    <div class="text">
-                        <span>Laptops</span>
-                        <h3>MSI GE70</h3>
-                        <h4>$629.00</h4>
-                        <div class="rate">
-                            <i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i>
+                    <div class="text relative flex flex-col justify-center items-center w-full py-[10px] px-[5px] bg-white z-[2] before:content-[''] before:absolute before:w-[80%] before:h-[2px] before:bg-[var(--sec-color)] before:bottom-[40%]">
+                        <span class="text-[#8D99AE] font-medium uppercase text-[13px] mb-[8px]">Laptops</span>
+                        <h3 class="tracking-[0.3px] text-[#2B2D42] font-bold mb-[8px] uppercase cursor-pointer transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]">MSI GE70</h3>
+                        <h4 class="text-[var(--main-color)] font-bold text-[18px] mb-[8px]">$629.00</h4>
+                        <div class="rate my-[10px] mb-[15px] z-[1] flex justify-center gap-1">
+                            <i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i>
                         </div>
-                        <div class="btns">
-                            <i class="fa-regular fa-heart fa-xs" style="color: #2b2b42;"></i>
-                            <i class="fa-solid fa-right-left fa-xs" style="color: #2b2d42;"></i>
-                            <i class="fa-solid fa-eye fa-xs" style="color: #2b2d42;"></i>
+                        <div class="btns flex m-[20px] gap-[30px] justify-center">
+                            <i class="fa-regular fa-heart fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-right-left fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-eye fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
                         </div>
                     </div>
-                    <div class="caret">
-                        <button class="alert-btn"><i class="fa-solid fa-cart-shopping fa-sm" style="color: #ef233c;"></i>ADD TO CARET</button>
+                    <div class="caret absolute bottom-0 w-full h-[70px] bg-black flex justify-center items-center text-center py-[20px] transition-all duration-200 ease-in-out group-hover/box:translate-y-[70px]">
+                        <button class="alert-btn group/btn bg-[var(--main-color)] border-2 border-[var(--main-color)] text-white py-[10px] px-[24px] rounded-full font-bold text-[15px] transition-all duration-200 ease-in-out hover:bg-white hover:text-[var(--main-color)] cursor-pointer"><i class="fa-solid fa-cart-shopping fa-sm text-[#ef233c] !hidden pr-4 group-hover/btn:!inline transition-transform duration-200 ease-in-out group-hover/btn:translate-y-[70px]"></i>ADD TO CARET</button>
                     </div>
                 </div>
-                <div class="box sp-2">
+                <div class="box group/box sp-2 relative flex flex-col items-center justify-between text-center bg-white shadow-[0_0_0_1px_var(--sec-color)] transition-all duration-200 ease-in-out max-lg:hover:mb-[70px] hover:shadow-[0_0_0_2px_var(--main-color)]  before:content-['-10%'] before:absolute before:right-[15px] before:top-[15px] before:border-2 before:border-[var(--main-color)] before:bg-white before:text-[var(--main-color)] before:px-[10px] before:py-[3px] before:text-[12px] before:leading-[1.2] before:tracking-[1.1px]">
                     <div class="image">
                         <img src="Assets/product07.png" alt="">
                     </div>
-                    <div class="text">
-                        <span>Smartphones</span>
-                        <h3>Samsung S6 Edge Plus</h3>
-                        <h4>$99.00 <del>$110.00</del></h4>
-                            <div class="rate">
-                            <i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i>
+                    <div class="text relative flex flex-col justify-center items-center w-full py-[10px] px-[5px] bg-white z-[2] before:content-[''] before:absolute before:w-[80%] before:h-[2px] before:bg-[var(--sec-color)] before:bottom-[40%]">
+                        <span class="text-[#8D99AE] font-medium uppercase text-[13px] mb-[8px]">Smartphones</span>
+                        <h3 class="tracking-[0.3px] text-[#2B2D42] font-bold mb-[8px] uppercase cursor-pointer transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]">Samsung S6 Plus</h3>
+                        <h4 class="text-[var(--main-color)] font-bold text-[18px] mb-[8px]">$99.00 <del class="text-[#8D99AE] text-[12px]">$110.00</del></h4>
+                        <div class="rate my-[10px] mb-[15px] z-[1] flex justify-center gap-1">
+                            <i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i>
                         </div>
-                        <div class="btns">
-                            <i class="fa-regular fa-heart fa-xs" style="color: #2b2b42;"></i>
-                            <i class="fa-solid fa-right-left fa-xs" style="color: #2b2d42;"></i>
-                            <i class="fa-solid fa-eye fa-xs" style="color: #2b2d42;"></i>
+                        <div class="btns flex m-[20px] gap-[30px] justify-center">
+                            <i class="fa-regular fa-heart fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-right-left fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-eye fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
                         </div>
                     </div>
-                    <div class="caret">
-                        <button class="alert-btn"><i class="fa-solid fa-cart-shopping fa-sm" style="color: #ef233c;"></i>ADD TO CARET</button>
+                    <div class="caret absolute bottom-0 w-full h-[70px] bg-black flex justify-center items-center text-center py-[20px] transition-all duration-200 ease-in-out group-hover/box:translate-y-[70px]">
+                        <button class="alert-btn group/btn bg-[var(--main-color)] border-2 border-[var(--main-color)] text-white py-[10px] px-[24px] rounded-full font-bold text-[15px] transition-all duration-200 ease-in-out hover:bg-white hover:text-[var(--main-color)] cursor-pointer"><i class="fa-solid fa-cart-shopping fa-sm text-[#ef233c] !hidden pr-4 group-hover/btn:!inline transition-transform duration-200 ease-in-out group-hover/btn:translate-y-[70px]"></i>ADD TO CARET</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box group/box relative flex flex-col items-center justify-between text-center bg-white shadow-[0_0_0_1px_var(--sec-color)] transition-all duration-200 ease-in-out max-lg:hover:mb-[70px] hover:shadow-[0_0_0_2px_var(--main-color)]">
                     <div class="image">
                         <img src="Assets/product03.png" alt="">
                     </div>
-                    <div class="text">
-                        <span>Laptops</span>
-                        <h3>Apple MacBook Pro</h3>
-                        <h4>$799.00</h4>
-                        <div class="rate">
-                            <i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i>
+                    <div class="text relative flex flex-col justify-center items-center w-full py-[10px] px-[5px] bg-white z-[2] before:content-[''] before:absolute before:w-[80%] before:h-[2px] before:bg-[var(--sec-color)] before:bottom-[40%]">
+                        <span class="text-[#8D99AE] font-medium uppercase text-[13px] mb-[8px]">Laptops</span>
+                        <h3 class="tracking-[0.3px] text-[#2B2D42] font-bold mb-[8px] uppercase cursor-pointer transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]">Apple MacBook Pro</h3>
+                        <h4 class="text-[var(--main-color)] font-bold text-[18px] mb-[8px]">$799.00</h4>
+                        <div class="rate my-[10px] mb-[15px] z-[1] flex justify-center gap-1">
+                            <i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i>
                         </div>
-                        <div class="btns">
-                            <i class="fa-regular fa-heart fa-xs" style="color: #2b2b42;"></i>
-                            <i class="fa-solid fa-right-left fa-xs" style="color: #2b2d42;"></i>
-                            <i class="fa-solid fa-eye fa-xs" style="color: #2b2d42;"></i>
+                        <div class="btns flex m-[20px] gap-[30px] justify-center">
+                            <i class="fa-regular fa-heart fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-right-left fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-eye fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
                         </div>
                     </div>
-                    <div class="caret">
-                        <button class="alert-btn"><i class="fa-solid fa-cart-shopping fa-sm" style="color: #ef233c;"></i>ADD TO CARET</button>
+                    <div class="caret absolute bottom-0 w-full h-[70px] bg-black flex justify-center items-center text-center py-[20px] transition-all duration-200 ease-in-out group-hover/box:translate-y-[70px]">
+                        <button class="alert-btn group/btn bg-[var(--main-color)] border-2 border-[var(--main-color)] text-white py-[10px] px-[24px] rounded-full font-bold text-[15px] transition-all duration-200 ease-in-out hover:bg-white hover:text-[var(--main-color)] cursor-pointer"><i class="fa-solid fa-cart-shopping fa-sm text-[#ef233c] !hidden pr-4 group-hover/btn:!inline transition-transform duration-200 ease-in-out group-hover/btn:translate-y-[70px]"></i>ADD TO CARET</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box group/box relative flex flex-col items-center justify-between text-center bg-white shadow-[0_0_0_1px_var(--sec-color)] transition-all duration-200 ease-in-out max-lg:hover:mb-[70px] hover:shadow-[0_0_0_2px_var(--main-color)]">
                     <div class="image">
                         <img src="Assets/product09.png" alt="">
                     </div>
-                    <div class="text">
-                        <span>Cameras</span>
-                        <h3>Rekam Presto 774</h3>
-                        <h4>$29.00</h4>
-                        <div class="rate">
-                            <i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #ef233c;"></i><i class="fa-solid fa-star fa-xs" style="color: #e4e7ed;"></i>
+                    <div class="text relative flex flex-col justify-center items-center w-full py-[10px] px-[5px] bg-white z-[2] before:content-[''] before:absolute before:w-[80%] before:h-[2px] before:bg-[var(--sec-color)] before:bottom-[40%]">
+                        <span class="text-[#8D99AE] font-medium uppercase text-[13px] mb-[8px]">Cameras</span>
+                        <h3 class="tracking-[0.3px] text-[#2B2D42] font-bold mb-[8px] uppercase cursor-pointer transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]">Rekam Presto 774</h3>
+                        <h4 class="text-[var(--main-color)] font-bold text-[18px] mb-[8px]">$29.00</h4>
+                        <div class="rate my-[10px] mb-[15px] z-[1] flex justify-center gap-1">
+                            <i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#ef233c]"></i><i class="fa-solid fa-star fa-xs text-[#e4e7ed]"></i>
                         </div>
-                        <div class="btns">
-                            <i class="fa-regular fa-heart fa-xs" style="color: #2b2b42;"></i>
-                            <i class="fa-solid fa-right-left fa-xs" style="color: #2b2d42;"></i>
-                            <i class="fa-solid fa-eye fa-xs" style="color: #2b2d42;"></i>
+                        <div class="btns flex m-[20px] gap-[30px] justify-center">
+                            <i class="fa-regular fa-heart fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-right-left fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
+                            <i class="fa-solid fa-eye fa-xs text-[#2b2b42] inline-block cursor-pointer text-[14px] transition-colors duration-200 ease-in-out hover:text-[var(--main-color)]"></i>
                         </div>
                     </div>
-                    <div class="caret">
-                        <button class="alert-btn"><i class="fa-solid fa-cart-shopping fa-sm" style="color: #ef233c;"></i>ADD TO CARET</button>
+                    <div class="caret absolute bottom-0 w-full h-[70px] bg-black flex justify-center items-center text-center py-[20px] transition-all duration-200 ease-in-out group-hover/box:translate-y-[70px]">
+                        <button class="alert-btn group/btn bg-[var(--main-color)] border-2 border-[var(--main-color)] text-white py-[10px] px-[24px] rounded-full font-bold text-[15px] transition-all duration-200 ease-in-out hover:bg-white hover:text-[var(--main-color)] cursor-pointer"><i class="fa-solid fa-cart-shopping fa-sm text-[#ef233c] !hidden pr-4 group-hover/btn:!inline transition-transform duration-200 ease-in-out group-hover/btn:translate-y-[70px]"></i>ADD TO CARET</button>
                     </div>
                 </div>
             </div>
@@ -336,105 +336,105 @@
     </div>
 <!-- End Top Selling -->
 <!-- Start Top Selling -->
-    <div class="top-selling pt-5 pb-15">
-        <div class="container flex justify-between flex-col items-start">
+    <div class="top-selling pt-5 pb-15 border-b-2 border-[var(--sec-color)]">
+        <div class="container px-4 mx-auto flex justify-between flex-col items-start">
             <div class="top-heading pb-10">
                 <h2 class="text-2xl uppercase font-bold">Top Selling</h2>
             </div>
-            <div class="lil-container grid [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))] gap-4 w-[100%]">
-                <div class="col">
-                    <div class="box">
-                        <div class="image">
-                            <img src="Assets/product01.png" alt="">
+            <div class="lil-container grid [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))] gap-4 w-[100%] max-md::grid-cols-[repeat(auto-fit,minmax(280px,1fr))] max-sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
+                <div class="col flex flex-col gap-[25px]">
+                    <div class="box flex gap-[17px]">
+                        <div class="image overflow-hidden max-w-[17%]">
+                            <img src="Assets/product01.png" class="max-w-full">
                         </div>
                         <div class="text">
-                            <span>Laptops</span>
-                            <h6>Lenovo IdeaPad</h6>
-                            <h6>$590.00 <del class="text-[#8D99AE] text-xs tracking-[-0.5px]">$659.00</del></h6>
+                            <span class="text-[#8D99AE] uppercase text-[13px]">Laptops</span>
+                            <h6 class="mt-[7px] mb-[7px] text-[14px] font-bold text-[#2B2D42] transition-colors duration-200 ease-in cursor-pointer tracking-[-0.5px] uppercase hover:text-[var(--main-color)]">Lenovo IdeaPad</h6>
+                            <h6 class="text-[var(--main-color)] font-bold tracking-[-0.8px]">$590.00 <del class="text-[#8D99AE] text-xs tracking-[-0.5px]">$659.00</del></h6>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="image">
-                            <img src="Assets/product02.png" alt="">
+                    <div class="box flex gap-[17px]">
+                        <div class="image overflow-hidden max-w-[17%]">
+                            <img src="Assets/product02.png" class="max-w-full">
                         </div>
                         <div class="text">
-                            <span>Headphones</span>
-                            <h6>Superlux</h6>
-                            <h6>$26.00</h6>
+                            <span class="text-[#8D99AE] uppercase text-[13px]">Headphones</span>
+                            <h6 class="mt-[7px] mb-[7px] text-[14px] font-bold text-[#2B2D42] transition-colors duration-200 ease-in cursor-pointer tracking-[-0.5px] uppercase hover:text-[var(--main-color)]">Superlux</h6>
+                            <h6 class="text-[var(--main-color)] font-bold tracking-[-0.8px]">$26.00</h6>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="image">
-                            <img src="Assets/product03.png" alt="">
+                    <div class="box flex gap-[17px]">
+                        <div class="image overflow-hidden max-w-[17%]">
+                            <img src="Assets/product03.png" class="max-w-full">
                         </div>
                         <div class="text">
-                            <span>Laptops</span>
-                            <h6>Apple MacBook Pro</h6>
-                            <h6>$799.00</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="box">
-                        <div class="image">
-                            <img src="Assets/product04.png" alt="">
-                        </div>
-                        <div class="text">
-                            <span>Tablets</span>
-                            <h6>Sony Xperia Z4</h6>
-                            <h6>$189.00</h6>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="image">
-                            <img src="Assets/product05.png" alt="">
-                        </div>
-                        <div class="text">
-                        <span>Headphones</span>
-                        <h6>Sony MDR</h6>
-                        <h6>$79.00</h6>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="image">
-                            <img src="Assets/product06.png" alt="">
-                        </div>
-                        <div class="text">
-                            <span>Laptops</span>
-                            <h6>MSI GE70</h6>
-                            <h6>$629.00</h6>
+                            <span class="text-[#8D99AE] uppercase text-[13px]">Laptops</span>
+                            <h6 class="mt-[7px] mb-[7px] text-[14px] font-bold text-[#2B2D42] transition-colors duration-200 ease-in cursor-pointer tracking-[-0.5px] uppercase hover:text-[var(--main-color)]">Apple MacBook Pro</h6>
+                            <h6 class="text-[var(--main-color)] font-bold tracking-[-0.8px]">$799.00</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="box">
-                        <div class="image">
-                            <img src="Assets/product07.png" alt="">
+                <div class="col flex flex-col gap-[25px]">
+                    <div class="box flex gap-[17px]">
+                        <div class="image overflow-hidden max-w-[17%]">
+                            <img src="Assets/product04.png" class="max-w-full">
                         </div>
                         <div class="text">
-                            <span>Smartphones</span>
-                            <h6>Samsung S6 Edge Plus</h6>
-                            <h6>$99.00 <del class="text-[#8D99AE] text-xs tracking-[-0.5px]">$110.00</del></h6>
+                            <span class="text-[#8D99AE] uppercase text-[13px]">Tablets</span>
+                            <h6 class="mt-[7px] mb-[7px] text-[14px] font-bold text-[#2B2D42] transition-colors duration-200 ease-in cursor-pointer tracking-[-0.5px] uppercase hover:text-[var(--main-color)]">Sony Xperia Z4</h6>
+                            <h6 class="text-[var(--main-color)] font-bold tracking-[-0.8px]">$189.00</h6>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="image">
-                            <img src="Assets/product08.png" alt="">
+                    <div class="box flex gap-[17px]">
+                        <div class="image overflow-hidden max-w-[17%]">
+                            <img src="Assets/product05.png" class="max-w-full">
                         </div>
                         <div class="text">
-                            <span>Laptops</span>
-                            <h6>Asus VivoBook X200</h6>
-                            <h6>$299.00</h6>
+                        <span class="text-[#8D99AE] uppercase text-[13px]">Headphones</span>
+                        <h6 class="mt-[7px] mb-[7px] text-[14px] font-bold text-[#2B2D42] transition-colors duration-200 ease-in cursor-pointer tracking-[-0.5px] uppercase hover:text-[var(--main-color)]">Sony MDR</h6>
+                        <h6 class="text-[var(--main-color)] font-bold tracking-[-0.8px]">$79.00</h6>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="image">
-                            <img src="Assets/product09.png" alt="">
+                    <div class="box flex gap-[17px]">
+                        <div class="image overflow-hidden max-w-[17%]">
+                            <img src="Assets/product06.png" class="max-w-full">
                         </div>
                         <div class="text">
-                            <span>Cameras</span>
-                            <h6>Rekam Presto 774</h6>
-                            <h6>$29.00</h6>
+                            <span class="text-[#8D99AE] uppercase text-[13px]">Laptops</span>
+                            <h6 class="mt-[7px] mb-[7px] text-[14px] font-bold text-[#2B2D42] transition-colors duration-200 ease-in cursor-pointer tracking-[-0.5px] uppercase hover:text-[var(--main-color)]">MSI GE70</h6>
+                            <h6 class="text-[var(--main-color)] font-bold tracking-[-0.8px]">$629.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col flex flex-col gap-[25px]">
+                    <div class="box flex gap-[17px]">
+                        <div class="image overflow-hidden max-w-[17%]">
+                            <img src="Assets/product07.png" class="max-w-full">
+                        </div>
+                        <div class="text">
+                            <span class="text-[#8D99AE] uppercase text-[13px]">Smartphones</span>
+                            <h6 class="mt-[7px] mb-[7px] text-[14px] font-bold text-[#2B2D42] transition-colors duration-200 ease-in cursor-pointer tracking-[-0.5px] uppercase hover:text-[var(--main-color)]">Samsung S6 Edge Plus</h6>
+                            <h6 class="text-[var(--main-color)] font-bold tracking-[-0.8px]">$99.00 <del class="text-[#8D99AE] text-xs tracking-[-0.5px]">$110.00</del></h6>
+                        </div>
+                    </div>
+                    <div class="box flex gap-[17px]">
+                        <div class="image overflow-hidden max-w-[17%]">
+                            <img src="Assets/product08.png" class="max-w-full">
+                        </div>
+                        <div class="text">
+                            <span class="text-[#8D99AE] uppercase text-[13px]">Laptops</span>
+                            <h6 class="mt-[7px] mb-[7px] text-[14px] font-bold text-[#2B2D42] transition-colors duration-200 ease-in cursor-pointer tracking-[-0.5px] uppercase hover:text-[var(--main-color)]">Asus VivoBook X200</h6>
+                            <h6 class="text-[var(--main-color)] font-bold tracking-[-0.8px]">$299.00</h6>
+                        </div>
+                    </div>
+                    <div class="box flex gap-[17px]">
+                        <div class="image overflow-hidden max-w-[17%]">
+                            <img src="Assets/product09.png" class="max-w-full">
+                        </div>
+                        <div class="text">
+                            <span class="text-[#8D99AE] uppercase text-[13px]">Cameras</span>
+                            <h6 class="mt-[7px] mb-[7px] text-[14px] font-bold text-[#2B2D42] transition-colors duration-200 ease-in cursor-pointer tracking-[-0.5px] uppercase hover:text-[var(--main-color)]">Rekam Presto 774</h6>
+                            <h6 class="text-[var(--main-color)] font-bold tracking-[-0.8px]">$29.00</h6>
                         </div>
                     </div>
                 </div>
@@ -443,64 +443,65 @@
     </div>
 <!-- End Top Selling -->    
 <!-- Start Sign-up -->
-    <div class="sign-up pt-8 pb-8">
-        <div class="container flex flex-col justify-center items-center">
+    <div class="sign-up pt-8 pb-8 border-b-3 border-[var(--main-color)]">
+        <div class="container px-4 mx-auto flex flex-col justify-center items-center">
             <div class="top-heading">
                 <p class="text-2xl font-normal pb-9 text-[#333] text-center">Sign Up for the <span class="font-bold">NEWSLETTER</span></p>
             </div>
-            <form action="" class="pb-10 relative">
-                <input type="text" placeholder="Enter Your Email" class="tracking-wide rounded-l-4xl bg-white">
-                <button class="text-white rounded-r-4xl text-[15px] w-[150px] font-bold cursor-pointer pl-5"><i class="fa-solid fa-envelope fa-sm" style="color: #ffffff;"></i> Subscribe</button>
+            <form action="" class="pb-10 relative flex">
+                <i class="fa-regular fa-envelope absolute text-[160px] top-[15px] -translate-y-1/2 rotate-[15deg] z-[-1] left-[-90px] text-[#e4e7ed]"></i>
+                <input type="text" placeholder="Enter Your Email" class="tracking-wide rounded-l-4xl bg-white border border-[var(--sec-color)] w-[350px] py-3 px-4 max-sm:w-[calc(100%-150px)]">
+                <button class="text-white rounded-r-4xl w-[150px] font-bold cursor-pointer pl-5 bg-[var(--main-color)] py-3 px-4 ml-[-5px] text-sm"><i class="fa-solid fa-envelope fa-sm" style="color: #ffffff;"></i> Subscribe</button>
             </form>
             <div class="icons">
-                <i class="fa-brands fa-facebook-f fa-s" style="color: #333;"></i>
-                <i class="fa-brands fa-twitter fa-s" style="color: #333;"></i>
-                <i class="fa-brands fa-instagram fa-s" style="color: #333;"></i>
-                <i class="fa-brands fa-pinterest fa-s" style="color: #333;"></i>
+                <i class="fa-brands fa-facebook-f fa-s text-[#333] border border-[var(--sec-color)] w-[42px] h-[42px] text-center !leading-[42px] mr-[5px] transition duration-200 ease-in-out hover:text-[var(--main-color)] hover:bg-[var(--sec-color)] cursor-pointer"></i>
+                <i class="fa-brands fa-twitter fa-s text-[#333] border border-[var(--sec-color)] w-[42px] h-[42px] text-center !leading-[42px] mr-[5px] transition duration-200 ease-in-out hover:text-[var(--main-color)] hover:bg-[var(--sec-color)] cursor-pointer"></i>
+                <i class="fa-brands fa-instagram fa-s text-[#333] border border-[var(--sec-color)] w-[42px] h-[42px] text-center !leading-[42px] mr-[5px] transition duration-200 ease-in-out hover:text-[var(--main-color)] hover:bg-[var(--sec-color)] cursor-pointer"></i>
+                <i class="fa-brands fa-pinterest fa-s text-[#333] border border-[var(--sec-color)] w-[42px] h-[42px] text-center !leading-[42px] mr-[5px] transition duration-200 ease-in-out hover:text-[var(--main-color)] hover:bg-[var(--sec-color)] cursor-pointer"></i>
             </div>
         </div>
     </div>
 <!-- End Sign-up -->
 <!-- Start Footer -->
-    <div class="footer pt-16 pb-12 bg-[#15161D] text-[#B9BABC]">
-        <div class="container grid [grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] gap-7">
+    <div class="footer pt-16 pb-12 bg-[#15161D] text-[#B9BABC] max-sm:pb-[30px]">
+        <div class="container px-4 mx-auto grid [grid-template-columns:repeat(auto-fit,minmax(250px,1fr))] gap-7">
             <div class="col">
-                <h3>About Us</h3>
+                <h3 class="font-extrabold uppercase text-lg text-white mb-[30px]">About Us</h3>
                 <p class="text-sm mb-[10px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
                 <ul>
-                    <li><i class="fa-solid fa-location-dot fa-sm pr-3" style="color: #d10024;"></i> 1734 Stonecoal Road</li>
-                    <li><i class="fa-solid fa-phone fa-sm pr-3" style="color: #d10024;"></i> +021-95-51-84</li>
-                    <li><i class="fa-regular fa-envelope pr-3" style="color: #d10024;"></i> email@email.com</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer"><i class="fa-solid fa-location-dot fa-sm pr-3" style="color: #d10024;"></i> 1734 Stonecoal Road</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer"><i class="fa-solid fa-phone fa-sm pr-3" style="color: #d10024;"></i> +021-95-51-84</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer"><i class="fa-regular fa-envelope pr-3" style="color: #d10024;"></i> email@email.com</li>
                 </ul>
             </div>
             <div class="col">
-                <h3>Categories</h3>
+                <h3 class="font-extrabold uppercase text-lg text-white mb-[30px]">Categories</h3>
                 <ul>
-                    <li>Hot deals</li>
-                    <li>Laptops</li>
-                    <li>Smartphones</li>
-                    <li>Cameras</li>
-                    <li>Accessories</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Hot deals</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Laptops</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Smartphones</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Cameras</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Accessories</li>
                 </ul>
             </div>
             <div class="col">
-                <h3>Information</h3>
+                <h3 class="font-extrabold uppercase text-lg text-white mb-[30px]">Information</h3>
                 <ul>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Privacy policy</li>
-                    <li>Orders and Returns</li>
-                    <li>Terms & Conditions</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">About Us</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Contact Us</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Privacy policy</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Orders and Returns</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Terms & Conditions</li>
                 </ul>
             </div>
             <div class="col">
-                <h3>Service</h3>
+                <h3 class="font-extrabold uppercase text-lg text-white mb-[30px]">Service</h3>
                 <ul>
-                    <li>My Account</li>
-                    <li>View Cart</li>
-                    <li>Wishlist</li>
-                    <li>Track My Order</li>
-                    <li>Help</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">My Account</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">View Cart</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Wishlist</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Track My Order</li>
+                    <li class="mb-[18px] text-[14px] font-medium transition duration-200 ease-in-out w-fit hover:text-[var(--main-color)] hover:cursor-pointer">Help</li>
                 </ul>
             </div>
         </div>
